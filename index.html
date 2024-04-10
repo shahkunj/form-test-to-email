@@ -1,0 +1,40 @@
+<!Doctype html>
+<html lang="en-gb" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+
+<body>
+<form action="submit.php" method="post" id="contact" onsubmit="successFunction()" class="enquiry-form form" data-animation="stretchLeft" data-delay="100" name="frmnewsletter">
+    <input type='hidden' value='contact-form' />
+                            <div class="messages"></div>
+<div class="column dt-sc-one-third first">
+<p class="input-text">
+<input id="form_name" class="input-field" type="text" name="name" title="Enter your Name" placeholder="Name *"  required="required" data-error="Name is required." />
+</p>
+</div>
+<div class="column dt-sc-one-third">
+<p class="input-text">
+<input id="form_email" class="input-field" type="email"  required="required" data-error="email is required." autocomplete="off" name="email" title="Enter your valid id" placeholder="Email *" />
+</p>
+</div>
+<div class="column dt-sc-one-third">
+<p class="input-text">
+<input id="phone" name="phone" class="input-field" type="text" required="required" data-error="mobile no is required." autocomplete="off" placeholder="Mobile No." />
+</p>
+</div>
+<p class="input-text">
+<textarea input id="subject" class="input-field" required="required" data-error="message is required." rows="3" cols="5" name="subject"  title="Enter your Message" placeholder="Subject *" style="
+    height: 60px;"></textarea>
+</p>
+<p class="input-text">
+<textarea id="mssg" class="input-field" required="required" data-error="message is required." rows="3" cols="5" name="message" title="Enter your Message" placeholder="Message *"></textarea>
+</p>
+<p class="submit"> <input type="submit" value="Send" name="submit" class="dt-sc-button" /> </p>
+</form>
+<div id="ajax_contactform_msg"></div>
+
+</body>
+</html>
